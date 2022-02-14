@@ -13,6 +13,7 @@ class TripTableSeeder extends Seeder
      */
     public function run(Faker $faker)
     {
+        // popolare in database con dati fake 
         for($i = 0; $i < 20; $i++) {
             $new_trip = new Trip();
             $new_trip->destination = $faker->state();
