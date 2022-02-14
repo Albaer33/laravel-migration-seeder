@@ -20,7 +20,7 @@ class TripTableSeeder extends Seeder
             $new_trip->trip_departure_date = $faker->dateTime();
             $new_trip->trip_return_date = $faker->dateTime();
             $new_trip->price = $faker->randomFloat(2, 50, 8000);
-            $new_journey->save();
+            $new_trip->save();
         }
     }
 }
